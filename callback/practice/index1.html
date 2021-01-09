@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <div id="haha"></div>
+
+
+
+
+    <script>
+        var count = prompt("Enter a number")
+       
+        
+
+    // setTimeout(timer,
+    //     setTimeout(timer,
+    //         setTimeout(timer,
+    //         1000)
+    //     ,1000)
+    // ,1000)
+
+    function settimeout(i)
+    {
+        setTimeout(() => {
+        console.log(i);
+        document.getElementById("haha").innerHTML = i
+        }, 1000)
+    }
+
+    for (var i = count; i>=1 ; i--)
+    {
+        settimeout(i)
+    }
+    </script>
+    
+</body>
+</html>
